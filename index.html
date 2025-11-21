@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset="utf-8">
+    <title>Retro Bowl</title>
+
+    <style>
+        body {
+            background: #000000;
+            color: #cccccc;
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            image-rendering: optimizeSpeed;
+            -webkit-interpolation-mode: nearest-neighbor;
+            -ms-touch-action: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        :-webkit-full-screen #canvas {
+            width: 100%;
+            height: 100%;
+        }
+        .gm4html5_div_class {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        div.gm4html5_login {
+            padding: 20px;
+            position: absolute;
+            border: 2px solid #000000;
+            background-color: #404040;
+            color: #00ff00;
+            border-radius: 15px;
+            box-shadow: #101010 20px 20px 40px;
+        }
+        div.gm4html5_cancel_button { float: right; }
+        div.gm4html5_login_button { float: left; }
+        div.gm4html5_login_header { text-align: center; }
+
+        :-webkit-full-screen {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gm4html5_div_class" id="gm4html5_div_id">
+        <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="loading" style="display:none;">
+        <canvas id="canvas" width="1406" height="791" style="touch-action:none; position:absolute; inset:50% -50% -50% 50%; transform:translate(-50%, -50%);">
+            <p>Your browser doesn't support HTML5 canvas.</p>
+        </canvas>
+    </div>
+
+    <script src="html5game/RetroBowl.js?WAEAC=1633155445"></script>
+    <script>window.onload = GameMaker_Init;</script>
+    <script src="html5game/uph_poki.js"></script>
+</body>
+</html>
